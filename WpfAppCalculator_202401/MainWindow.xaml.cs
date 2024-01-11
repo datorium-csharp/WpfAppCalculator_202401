@@ -20,6 +20,10 @@ namespace WpfAppCalculator_202401
     /// </summary>
     public partial class MainWindow : Window
     {
+        private double num1 = 0;
+        private double num2 = 0;
+        private string operation = String.Empty;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -27,14 +31,6 @@ namespace WpfAppCalculator_202401
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            // TASKS make all those decimal numbers possible
-            // 3.14
-            // 0.00123
-            // 0.5
-            // 5
-            // 0.35.145 (this is wrong!)
-            // 0..123 (this is wrong!)
-
             Button button = (Button)sender;
             if (button != null)
             {
@@ -47,6 +43,82 @@ namespace WpfAppCalculator_202401
                         return;
                     }
                 }
+                else if (buttonText == "+")
+                {
+                    // store operation
+                    operation = buttonText;
+                    // store the existing value
+                    num1 = Convert.ToDouble(Display.Text);
+                    // clear the Display
+                    Display.Text = "0";
+                    //exit the function
+                    return;
+                }
+                else if (buttonText == "-")
+                {
+                    // store operation
+                    operation = buttonText;
+                    // store the existing value
+                    num1 = Convert.ToDouble(Display.Text);
+                    // clear the Display
+                    Display.Text = "0";
+                    //exit the function
+                    return;
+                }
+                else if (buttonText == "x")
+                {
+                    // store operation
+                    operation = buttonText;
+                    // store the existing value
+                    num1 = Convert.ToDouble(Display.Text);
+                    // clear the Display
+                    Display.Text = "0";
+                    //exit the function
+                    return;
+                }
+                else if (buttonText == "/")
+                {
+                    // store operation
+                    operation = buttonText;
+                    // store the existing value
+                    num1 = Convert.ToDouble(Display.Text);
+                    // clear the Display
+                    Display.Text = "0";
+                    //exit the function
+                    return;
+                }
+                else if (buttonText == "=")
+                {
+                    double result;
+                    // store the current value
+                    num2 = Convert.ToDouble(Display.Text);
+                    result = num2;
+
+                    // check operation and calculate the result
+                    if (operation == "+")
+                    {
+                        result = num1 + num2;
+                    }
+                    else if (operation == "-")
+                    {
+                        result = num1 - num2;
+                    }
+                    else if (operation == "x")
+                    {
+                        result = num1 * num2;
+                    }
+                    else if (operation == "/")
+                    {
+                        result = num1 / num2;
+                    }
+
+                    //show the result in Display
+                    Display.Text = result.ToString();
+                    operation = String.Empty;
+                    //exit the function
+                    return;
+                }
+
 
                 if (Display.Text == "0" && buttonText != ".")
                 {

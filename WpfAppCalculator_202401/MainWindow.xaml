@@ -19,6 +19,11 @@
         <Button Content="0" HorizontalAlignment="Left" Margin="75,275,0,0" VerticalAlignment="Top" Height="60" Width="60" FontSize="18" Background="#FFD228CA" BorderBrush="White" Foreground="White" Click="Button_Click"/>
         <TextBox x:Name="Display" HorizontalAlignment="Left" Margin="10,20,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="360" Height="40" Background="#FF7322BE" Foreground="White" FontSize="26" TextAlignment="Right"/>
         <Button Content="." HorizontalAlignment="Left" Margin="140,275,0,0" VerticalAlignment="Top" Height="60" Width="60" FontSize="18" Background="#FFD228CA" BorderBrush="White" Foreground="White" Click="Button_Click"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="205,80,0,0" VerticalAlignment="Top" Height="60" Width="60" FontSize="18" Background="#FF2849D2" BorderBrush="White" Foreground="White" Click="Button_Click"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="205,145,0,0" VerticalAlignment="Top" Height="60" Width="60" FontSize="18" Background="#FF2849D2" BorderBrush="White" Foreground="White" Click="Button_Click"/>
+        <Button Content="x" HorizontalAlignment="Left" Margin="205,210,0,0" VerticalAlignment="Top" Height="60" Width="60" FontSize="18" Background="#FF2849D2" BorderBrush="White" Foreground="White" Click="Button_Click"/>
+        <Button Content="/" HorizontalAlignment="Left" Margin="205,275,0,0" VerticalAlignment="Top" Height="60" Width="60" FontSize="18" Background="#FF2849D2" BorderBrush="White" Foreground="White" Click="Button_Click"/>
+        <Button Content="=" HorizontalAlignment="Left" Margin="10,340,0,0" VerticalAlignment="Top" Height="60" Width="255" FontSize="18" Background="#FF2849D2" BorderBrush="White" Foreground="White" Click="Button_Click"/>
 
     </Grid>
 </Window>
