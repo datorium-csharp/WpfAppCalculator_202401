@@ -51,7 +51,8 @@ namespace WpfAppCalculator_202401
                 }
                 else if (buttonText == "+/-")
                 {
-
+                    Display.Text = Convert.ToString(Convert.ToDouble(Display.Text) * -1);
+                    return;
                 }
                 else if (buttonText == "+")
                 {
