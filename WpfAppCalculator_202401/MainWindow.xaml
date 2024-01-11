@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppCalculator_202401"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="400">
+        Title="MainWindow" Height="430" Width="340">
     <Grid>
         <Button Content="1" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top" Height="60" Width="60" FontSize="18" Background="#FFD228CA" BorderBrush="White" Foreground="White" Click="Button_Click"/>
         <Button Content="2" HorizontalAlignment="Left" Margin="75,80,0,0" VerticalAlignment="Top" Height="60" Width="60" FontSize="18" Background="#FFD228CA" BorderBrush="White" Foreground="White" Click="Button_Click"/>
@@ -17,13 +17,15 @@
         <Button Content="8" HorizontalAlignment="Left" Margin="75,210,0,0" VerticalAlignment="Top" Height="60" Width="60" FontSize="18" Background="#FFD228CA" BorderBrush="White" Foreground="White" Click="Button_Click"/>
         <Button Content="9" HorizontalAlignment="Left" Margin="140,210,0,0" VerticalAlignment="Top" Height="60" Width="60" FontSize="18" Background="#FFD228CA" BorderBrush="White" Foreground="White" Click="Button_Click"/>
         <Button Content="0" HorizontalAlignment="Left" Margin="75,275,0,0" VerticalAlignment="Top" Height="60" Width="60" FontSize="18" Background="#FFD228CA" BorderBrush="White" Foreground="White" Click="Button_Click"/>
-        <TextBox x:Name="Display" HorizontalAlignment="Left" Margin="10,20,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="360" Height="40" Background="#FF7322BE" Foreground="White" FontSize="26" TextAlignment="Right"/>
+        <TextBox x:Name="Display" HorizontalAlignment="Left" Margin="10,20,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="320" Height="40" Background="#FF7322BE" Foreground="White" FontSize="26" TextAlignment="Right"/>
         <Button Content="." HorizontalAlignment="Left" Margin="140,275,0,0" VerticalAlignment="Top" Height="60" Width="60" FontSize="18" Background="#FFD228CA" BorderBrush="White" Foreground="White" Click="Button_Click"/>
         <Button Content="+" HorizontalAlignment="Left" Margin="205,80,0,0" VerticalAlignment="Top" Height="60" Width="60" FontSize="18" Background="#FF2849D2" BorderBrush="White" Foreground="White" Click="Button_Click"/>
         <Button Content="-" HorizontalAlignment="Left" Margin="205,145,0,0" VerticalAlignment="Top" Height="60" Width="60" FontSize="18" Background="#FF2849D2" BorderBrush="White" Foreground="White" Click="Button_Click"/>
         <Button Content="x" HorizontalAlignment="Left" Margin="205,210,0,0" VerticalAlignment="Top" Height="60" Width="60" FontSize="18" Background="#FF2849D2" BorderBrush="White" Foreground="White" Click="Button_Click"/>
         <Button Content="/" HorizontalAlignment="Left" Margin="205,275,0,0" VerticalAlignment="Top" Height="60" Width="60" FontSize="18" Background="#FF2849D2" BorderBrush="White" Foreground="White" Click="Button_Click"/>
         <Button Content="=" HorizontalAlignment="Left" Margin="10,340,0,0" VerticalAlignment="Top" Height="60" Width="255" FontSize="18" Background="#FF2849D2" BorderBrush="White" Foreground="White" Click="Button_Click"/>
+        <Button Content="C" HorizontalAlignment="Left" Margin="270,80,0,0" VerticalAlignment="Top" Height="320" Width="60" FontSize="18" Background="#FFD22828" BorderBrush="White" Foreground="White" Click="Button_Click"/>
+        <Button Content="+/-" HorizontalAlignment="Left" Margin="10,275,0,0" VerticalAlignment="Top" Height="60" Width="60" FontSize="18" Background="#FFD228CA" BorderBrush="White" Foreground="White" Click="Button_Click"/>
 
     </Grid>
 </Window>

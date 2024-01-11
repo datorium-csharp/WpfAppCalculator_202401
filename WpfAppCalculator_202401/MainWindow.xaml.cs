@@ -43,6 +43,16 @@ namespace WpfAppCalculator_202401
                         return;
                     }
                 }
+                else if (buttonText == "C")
+                {
+                    Display.Text = "0";
+                    operation = String.Empty;
+                    return;
+                }
+                else if (buttonText == "+/-")
+                {
+
+                }
                 else if (buttonText == "+")
                 {
                     // store operation
